@@ -1,14 +1,13 @@
-import { auth } from "@/lib/auth";   // ✅ ঠিক
 import { NextResponse } from "next/server";
 
-export async function middleware(req) {
-  const session = await auth.api.getSession(req);
+export function middleware(req) {
+  const token = req.cookies.get("better-auth.session-token");
 
   const isProtected =
     req.nextUrl.pathname.startsWith("/profile") ||
     req.nextUrl.pathname.startsWith("/books");
 
-  if (isProtected && !session) {
+  if (isProtected && !token) {
     return NextResponse.redirect(new URL("/login", req.url));
   }
 
