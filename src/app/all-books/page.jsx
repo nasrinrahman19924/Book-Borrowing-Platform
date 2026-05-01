@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { getBooks } from "@/lib/books";
+import Link from "next/link";
+
 
 export default function AllBooksPage() {
   const allBooks = getBooks();
@@ -56,9 +58,12 @@ export default function AllBooksPage() {
               <h2 className="card-title">{book.title}</h2>
               <p>{book.author}</p>
 
-              <button className="btn btn-primary">
+              <Link
+                href={`/books/${book.id}`}
+                className="btn btn-primary"
+              >
                 Details
-              </button>
+              </Link>
             </div>
           </div>
         ))}
