@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📚 Online Book Borrowing Platform
 
-## Getting Started
+A full-stack web application built with Next.js, MongoDB, and Better Auth that allows users to browse books, borrow them, and manage their profile with Google and email authentication.
 
-First, run the development server:
+🌐 Live URL
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+👉 https://book-borrowing-platform-brown.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎯 Project Purpose
 
-## Learn More
+This project is designed to simulate a real-world online library system where users can:
 
-To learn more about Next.js, take a look at the following resources:
+Register and login using email or Google
+Browse available books
+Borrow books
+View borrowed books in their profile
+Manage authentication securely
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+It demonstrates full-stack development skills including authentication, API handling, database integration, and UI design.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✨ Key Features
+🔐 Authentication (Email + Google Login)
+👤 User Profile page (protected route)
+📚 Book listing system
+📖 Borrow book functionality
+🧾 My borrowed books tracking
+🚪 Logout system
+⚡ Fast performance with Next.js App Router
+🎨 Clean UI with Tailwind CSS / DaisyUI
+🗄️ MongoDB database integration
+🛠️ Technologies Used
+Frontend
+Next.js (App Router)
+React.js
+Tailwind CSS
+DaisyUI
+Backend
+Next.js API Routes
+Better Auth
+Database
+MongoDB Atlas
+Mongoose
+📦 NPM Packages Used
+"dependencies": {
+  "next": "^15.x",
+  "react": "^18.x",
+  "react-dom": "^18.x",
+  "mongoose": "^8.x",
+  "better-auth": "^latest",
+  "tailwindcss": "^3.x",
+  "daisyui": "^latest"
+}
