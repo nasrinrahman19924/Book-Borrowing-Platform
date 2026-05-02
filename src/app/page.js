@@ -3,34 +3,38 @@ import MarqueeText from "@/components/MarqueeText";
 import FeaturedBooks from "@/components/FeaturedBooks";
 
 
-
-
-
-
   export default function Home() {
     return (
       <>
-        {/* Banner */}
-        <div className="hero min-h-[80vh] bg-base-200">
-          <div className="hero-content text-center">
-            <div>
-              <h1 className="text-6xl font-bold">
-                Find Your Next Read
-              </h1>
+          {/* 🔥 Banner Section */}
+      <div
+        className="hero min-h-[70vh]"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1512820790803-83ca734da794')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="hero-overlay bg-gradient-to-r from-black via-black/20 to-transparent"></div>
 
-              <p className="py-6 text-lg">
-                Discover amazing books from every category
-              </p>
+        <div className="hero-content text-center text-white">
+          <div>
+            <h1 className="text-5xl font-bold">
+              Find Your Next Read 📚
+            </h1>
 
-              <Link
-                href="/all-books"
-                className="btn btn-primary"
-              >
+            <p className="py-4">
+              Discover amazing books from every category
+            </p>
+
+            <Link href="/all-books">
+              <button className="btn btn-primary">
                 Browse Now
-              </Link>
-            </div>
+              </button>
+            </Link>
           </div>
         </div>
+      </div>
 
 
        {/* Marquee */}
