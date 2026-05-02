@@ -25,7 +25,7 @@ export default function AllBooksPage() {
   return (
     <div className="max-w-7xl mx-auto p-6">
 
-      {/* Search */}
+     
       <input
         type="text"
         placeholder="Search books..."
@@ -33,7 +33,7 @@ export default function AllBooksPage() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {/* Category Buttons */}
+      
       <div className="flex gap-3 mb-6">
         {["All", "Story", "Tech", "Science"].map((cat) => (
           <button
@@ -46,7 +46,7 @@ export default function AllBooksPage() {
         ))}
       </div>
 
-      {/* Books */}
+     
       <div className="grid md:grid-cols-3 gap-6">
         {filteredBooks.map((book) => (
           <div key={book.id} className="card bg-base-100 shadow-xl">

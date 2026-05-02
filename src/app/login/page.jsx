@@ -34,7 +34,7 @@ export default function LoginPage() {
 
         <h2 className="text-2xl font-bold text-center">Login</h2>
 
-        {/* Google */}
+        
         <button
           onClick={handleGoogleLogin}
           className="btn btn-outline w-full"
@@ -44,7 +44,7 @@ export default function LoginPage() {
 
         <div className="divider">OR</div>
 
-        {/* Form */}
+        
         <form onSubmit={handleLogin} className="space-y-3">
           <input
             className="input input-bordered w-full"

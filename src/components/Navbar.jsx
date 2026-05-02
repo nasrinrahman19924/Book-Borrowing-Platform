@@ -4,29 +4,28 @@ import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
 
 export default function Navbar() {
-  const { data: session } = authClient.useSession(); // 👈 correct
-
+  const { data: session } = authClient.useSession(); 
   const user = session?.user;
 
   return (
     <div className="navbar bg-base-100 px-4">
       
      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
-       {/* LEFT */}
+      
       <div className="flex-1">
         <Link href="/" className="text-xl font-bold">
           📚 BookApp
         </Link>
       </div>
 
-      {/* CENTER */}
+      
       <div className="flex gap-4">
         <Link href="/">Home</Link>
         <Link href="/all-books">All Books</Link>
         <Link href="/profile">My Profile</Link>
       </div>
 
-      {/* RIGHT */}
+    
       <div>
         {user ? (
           <div className="flex items-center gap-6 mt-6">

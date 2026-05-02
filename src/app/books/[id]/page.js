@@ -2,7 +2,7 @@ import { getBookById } from "@/lib/books";
 import BorrowButton from "@/components/BorrowButton";
 
 export default async function BookDetails({ params }) {
-  const { id } = await params;   // ✅ IMPORTANT FIX
+  const { id } = await params;   
 
   const book = getBookById(id);
 
@@ -19,12 +19,12 @@ export default async function BookDetails({ params }) {
   return (
     <div className="max-w-6xl mx-auto p-10 grid md:grid-cols-2 gap-10">
 
-      {/* Image */}
+      
       <div>
         <img src={book.image_url} alt={book.title} />
       </div>
 
-      {/* Details */}
+     
       <div>
         <h1 className="text-5xl font-bold">{book.title}</h1>
         <p className="mt-4">Author: {book.author}</p>

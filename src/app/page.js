@@ -6,7 +6,7 @@ import FeaturedBooks from "@/components/FeaturedBooks";
   export default function Home() {
     return (
       <>
-          {/* 🔥 Banner Section */}
+          
       <div
         className="hero min-h-[70vh]"
         style={{
@@ -14,7 +14,7 @@ import FeaturedBooks from "@/components/FeaturedBooks";
             "url('https://images.unsplash.com/photo-1512820790803-83ca734da794')",
         }}
       >
-        {/* Overlay */}
+        
         <div className="hero-overlay bg-gradient-to-r from-black via-black/20 to-transparent"></div>
 
         <div className="hero-content text-center text-white">
@@ -37,13 +37,13 @@ import FeaturedBooks from "@/components/FeaturedBooks";
       </div>
 
 
-       {/* Marquee */}
+       
         <MarqueeText />
 
-        {/* Featured Books */}
+        
         <FeaturedBooks />
 
-        {/* Extra Section 1 */}
+       
         <section className="py-20 bg-base-200 text-center">
           <h2 className="text-4xl font-bold">
             Why Choose Us?
@@ -54,7 +54,7 @@ import FeaturedBooks from "@/components/FeaturedBooks";
           </p>
         </section>
 
-        {/* Extra Section 2 */}
+        
         <section className="py-20 text-center">
           <h2 className="text-4xl font-bold">
             Trusted by Readers
