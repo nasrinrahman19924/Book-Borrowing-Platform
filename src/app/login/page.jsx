@@ -1,16 +1,16 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
+  const router = useRouter();
+
   const handleGoogleLogin = async () => {
-    try {
-      await authClient.signIn.social({
-        provider: "google",
-      });
-    } catch (err) {
-      console.log(err);
-    }
+    await authClient.signIn.social({
+      provider: "google",
+      callbackURL: "/", // 👈 login শেষে কোথায় যাবে
+    });
   };
 
   return (
