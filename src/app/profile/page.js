@@ -1,38 +1,33 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { authClient } from "@/lib/auth-client";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function ProfilePage() {
-  const [user, setUser] = useState(null);
+  const { data: session, isPending } = authClient.useSession();
+  const router = useRouter();
 
   useEffect(() => {
-    const loadUser = async () => {
-      const session = await authClient.getSession();
-      setUser(session?.user);
-    };
-    loadUser();
-  }, []);
+    
+    if (!isPending && !session) {
+      router.replace("/login");
+    }
+  }, [isPending, session, router]);
 
-  if (!user) {
+  
+  if (isPending) {
     return <p className="text-center mt-10">Loading...</p>;
   }
 
+  
+  if (!session) return null;
+
   return (
-    <div className="max-w-3xl mx-auto p-6 text-center">
-      <img
-        src={user.image}
-        alt="user"
-        className="w-32 h-32 rounded-full mx-auto"
-      />
-
-      <h1 className="text-3xl font-bold mt-4">{user.name}</h1>
-      <p className="mt-2">{user.email}</p>
-
-      <Link href="/profile/update" className="btn btn-outline mt-6">
-        Update Profile
-      </Link>
+    <div className="p-5">
+      <h1 className="text-xl font-bold">My Profile</h1>
+      <p>Name: {session.user.name}</p>
+      <p>Email: {session.user.email}</p>
     </div>
   );
 }

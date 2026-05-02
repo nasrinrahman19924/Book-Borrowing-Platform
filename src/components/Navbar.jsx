@@ -11,7 +11,8 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-100 px-4">
       
-      {/* LEFT */}
+     <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
+       {/* LEFT */}
       <div className="flex-1">
         <Link href="/" className="text-xl font-bold">
           📚 BookApp
@@ -28,7 +29,7 @@ export default function Navbar() {
       {/* RIGHT */}
       <div>
         {user ? (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-6 mt-6">
             <span>{user.name}</span>
 
             <button
@@ -47,6 +48,7 @@ export default function Navbar() {
           </Link>
         )}
       </div>
+     </nav>
     </div>
   );
 }
