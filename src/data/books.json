@@ -1,13 +1,13 @@
 [
   {
-    "id": "1",
-    "title": "The Silent Patient",
-    "author": "Alex Michaelides",
-    "description": "A psychological thriller about a woman who stops speaking after a shocking crime.",
-    "category": "Story",
-    "available_quantity": 5,
-    "image_url": "https://i.ibb.co/8m6yYzL/silent-patient.jpg"
-  },
+  "id": "1",
+  "title": "The Silent Patient",
+  "author": "Alex Michaelides",
+  "description": "A psychological thriller about a woman who stops speaking after a shocking crime.",
+  "category": "Story",
+  "available_quantity": 5,
+  "image_url": "https://covers.openlibrary.org/b/id/9251996-L.jpg"
+},
   {
     "id": "2",
     "title": "Atomic Habits",
@@ -27,14 +27,14 @@
     "image_url": "https://i.ibb.co/ZYW3VTp/clean-code.jpg"
   },
   {
-    "id": "4",
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "description": "A journey of a shepherd boy seeking his personal legend.",
-    "category": "Story",
-    "available_quantity": 7,
-    "image_url": "https://i.ibb.co/k3JdZ2X/alchemist.jpg"
-  },
+  "id": "4",
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "description": "A philosophical novel about a shepherd boy's journey to find his destiny and treasure.",
+  "category": "Story",
+  "available_quantity": 8,
+  "image_url": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+},
   {
     "id": "5",
     "title": "Deep Work",
@@ -42,7 +42,7 @@
     "description": "Rules for focused success in a distracted world.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://i.ibb.co/5kRrRzV/deep-work.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/8370226-L.jpg"
   },
   {
     "id": "6",
@@ -51,7 +51,7 @@
     "description": "A deep dive into JavaScript core mechanisms.",
     "category": "Tech",
     "available_quantity": 3,
-    "image_url": "https://i.ibb.co/3Wf6Z6G/ydkjs.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/8226191-L.jpg"
   },
   {
     "id": "7",
@@ -60,7 +60,7 @@
     "description": "Classic book on success and personal development.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://i.ibb.co/2qK9Y2v/think-grow-rich.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/7352161-L.jpg"
   },
   {
     "id": "8",
@@ -69,7 +69,7 @@
     "description": "Financial literacy and wealth-building strategies.",
     "category": "Science",
     "available_quantity": 10,
-    "image_url": "https://i.ibb.co/Y3bK7sK/rich-dad.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/8371993-L.jpg"
   },
   {
     "id": "9",
@@ -78,7 +78,7 @@
     "description": "Tips and philosophy for becoming a better programmer.",
     "category": "Tech",
     "available_quantity": 2,
-    "image_url": "https://i.ibb.co/4P6mF8L/pragmatic.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/8089251-L.jpg"
   },
   {
     "id": "10",
@@ -87,7 +87,7 @@
     "description": "A young wizard's journey begins at Hogwarts.",
     "category": "Story",
     "available_quantity": 6,
-    "image_url": "https://i.ibb.co/5x2Zz6Y/harry-potter.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/7984916-L.jpg"
   },
   {
     "id": "11",
@@ -96,7 +96,7 @@
     "description": "Comprehensive guide to algorithms and data structures.",
     "category": "Tech",
     "available_quantity": 3,
-    "image_url": "https://i.ibb.co/X7w3v6V/algorithms.jpg"
+    "image_url": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
   },
   {
     "id": "12",
